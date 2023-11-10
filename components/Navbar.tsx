@@ -10,6 +10,9 @@ const Navbar = () => {
                 <Link href="/" className='flex z-40 font-semibold'>
                     <span>quill.</span>
                 </Link>
+                <div className='hidden items-center space-x-4 sm:flex'>
+                    
+                </div>
             </div>
         </MaxWidthWrapper>
     </nav>
