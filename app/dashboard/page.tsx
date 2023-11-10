@@ -4,7 +4,6 @@ import { redirect } from "next/navigation"
 const Page = async () => {
     const { getUser } = getKindeServerSession()
     const user = await getUser()
-    console.log("User>>>>>>", user)
     if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
     return <div>{user.email}</div>
 }
